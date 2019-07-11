@@ -6,6 +6,7 @@ int main(){
   srand(time(NULL));
   int a=rand()%6+1;
   int b=rand()%6+1;
+  int c=rand()%6+1;
   char name[70];
 
   
@@ -16,13 +17,14 @@ int main(){
   printf("Rolling the dice...\n");
   printf("Die 1:%d\n",a);
   printf("Die 2:%d\n",b);
+  printf("Die 3:%d\n",c);
   int total=a+b;
-  printf("Total value:%d\n",total);
+  printf("Total value:%d\n%s",total,name);
 
   if(total>7)
-    printf("You won\n");
+    printf(" won\n");
   else
-    printf("You lost\n");
+    printf(" lost\n");
       
 
 
